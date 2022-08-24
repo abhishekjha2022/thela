@@ -18,7 +18,20 @@ function Home() {
   }, []);
   return (
     <div>
-      <img src={require("./THELA.png")} className="home-banner" width="100%" />
+      <div style={{ flexDirection: "column" }}>
+        <h2
+          style={{
+            marginTop: "20px",
+            marginBottom: "20px",
+            color: "green",
+            fontWeight: "bold",
+            fontFamily: "fantasy",
+          }}
+        >
+          Get the Fresh vegetables and fruits at your doorsteps
+        </h2>
+        <img src={require("./hero.png")} width="70%" height="600px" />
+      </div>
       <div className="featured-products-container container mt-4">
         <h2 style={{ fontSize: "45px", color: "green", fontWeight: "bold" }}>
           Fresh vegetables for today
@@ -44,7 +57,7 @@ function Home() {
       </div>
       {/* sale banner */}
       <div className="sale__banner--container mt-4">
-        <img src={require("./discount1.png")} />
+        <img src={require("./discount1.png")} width="100%" />
       </div>
       <div className="recent-products-container container mt-4">
         <h2>Categories</h2>
